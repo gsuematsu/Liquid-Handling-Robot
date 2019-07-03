@@ -2,7 +2,7 @@
 #include "globals.h"
 
 
-const int STEPSORVOLTOFILL = 50;
+
 
 // bool CALIBRATING = true;
 
@@ -245,5 +245,3 @@ void clearCommands(){
   for(int i = 0; i < 3; i++)
     commandParameters[i] = 0;
 }
-
-

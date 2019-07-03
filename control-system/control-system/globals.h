@@ -2,30 +2,30 @@
 #define GLOBAL_H
 #include <Arduino.h>
 
-const int SHAPEKO_XMAXMM = 173;
-const int SHAPEKO_YMAXMM = 158;
-const int SHAPEKO_ZMAXMM = 65;
+#define SHAPEKO_XMAXMM 173
+#define SHAPEKO_YMAXMM 158
+#define SHAPEKO_ZMAXMM 65
 
 const float PIPETTE_S2V = 0.06386364;
 const float PIPETTE_S2D = 1 / PIPETTE_S2V;
 const float PIPETTE_MAX_VOL = 300;  // ul
-const int PIPETTE_STEP_PIN = 7;
-const int PIPETTE_DIR_PIN = 6;
+#define PIPETTE_STEP_PIN 7
+#define PIPETTE_DIR_PIN 6
 
-const int X_MOTOR_STEP_PIN = 13;
-const int X_MOTOR_DIR_PIN = 12;
-const int X_MIN_SWITCH_PIN = A0;
-const int X_MAX_SWITCH_PIN = A3;
+#define X_MOTOR_STEP_PIN 13
+#define X_MOTOR_DIR_PIN 12
+#define X_MIN_SWITCH_PIN A0
+#define X_MAX_SWITCH_PIN A3
 
-const int Y_MOTOR_STEP_PIN = 11;
-const int Y_MOTOR_DIR_PIN = 10;
-const int Y_MIN_SWITCH_PIN = A1;
-const int Y_MAX_SWITCH_PIN = A4;
+#define Y_MOTOR_STEP_PIN 11
+#define Y_MOTOR_DIR_PIN 10
+#define Y_MIN_SWITCH_PIN A1
+#define Y_MAX_SWITCH_PIN A4
 
-const int Z_MOTOR_STEP_PIN = 9;
-const int Z_MOTOR_DIR_PIN = 8;
-const int Z_MIN_SWITCH_PIN = A2;
-const int Z_MAX_SWITCH_PIN = A5;
+#define Z_MOTOR_STEP_PIN 9
+#define Z_MOTOR_DIR_PIN 8
+#define Z_MIN_SWITCH_PIN A2
+#define Z_MAX_SWITCH_PIN A5
 
 const float WELL_ORIGIN_X = 0;       // where pipette is lined up with well
 const float WELL_ORIGIN_Y = 0;
@@ -55,11 +55,11 @@ const int WAIT_AFTER_PIPETTE = 10;   // delay after a pipette command
 const int MIX_DELAY = 10;            // delay between mixing iterations
 const int PULSE_DURATION_XY = 800;
 const int PULSE_DURATION_Z = 330;
+const int STEPSORVOLTOFILL = 50;
 
 const byte DO_NOTHING = 0x0;
 const byte COMMAND_RECEIVED = 0x1;
 const byte TRANSMISSION_TERMINATED = 0xf;
-
 
 static bool CALIBRATING = true;
 
