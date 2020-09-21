@@ -52,7 +52,8 @@ void setup(){
    size(860, 480);
    background(0);
    
-   rose = loadImage("Logo.png");
+   //rose = loadImage("Logo.png");
+   rose = loadImage("Rose2.png");
    
    cp5 = new ControlP5(this);
    
